@@ -7,11 +7,17 @@
  *
  */
 
+#if SWIFT_PACKAGE
+#import "FBSnapshotTestCasePlatform.h"
+#import "FBSnapshotTestController.h"
+#else
 #import <FBSnapshotTestCase/FBSnapshotTestCasePlatform.h>
 #import <FBSnapshotTestCase/FBSnapshotTestController.h>
-#import <FBSnapshotTestCase/UIImage+Compare.h>
-#import <FBSnapshotTestCase/UIImage+Diff.h>
-#import <FBSnapshotTestCase/UIImage+Snapshot.h>
+#endif
+
+#import <UIImage+Compare.h>
+#import <UIImage+Diff.h>
+#import <UIImage+Snapshot.h>
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>

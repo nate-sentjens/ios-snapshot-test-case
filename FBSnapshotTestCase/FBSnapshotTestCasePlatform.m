@@ -7,7 +7,12 @@
  *
  */
 
+#if SWIFT_PACKAGE
+#import "FBSnapshotTestCasePlatform.h"
+#else
 #import <FBSnapshotTestCase/FBSnapshotTestCasePlatform.h>
+#endif
+
 #import <UIKit/UIKit.h>
 
 BOOL FBSnapshotTestCaseIs64Bit(void)

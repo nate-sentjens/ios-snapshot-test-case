@@ -10,7 +10,11 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+#if SWIFT_PACKAGE
+#import "FBSnapshotTestCasePlatform.h"
+#else
 #import <FBSnapshotTestCase/FBSnapshotTestCasePlatform.h>
+#endif
 
 NS_ASSUME_NONNULL_BEGIN
 
